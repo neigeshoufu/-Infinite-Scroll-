@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/page.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/jquery-infinitescroll/2.1.0/jquery.infinitescroll.min.js"></script>
+
+    <script src="./js/page.js"></script>
+    <title>B站排行榜</title>
+</head>
+<body>
+<header>
+    <div class="web_logo">
+        <img src="./images/logo.png">
+        <h3>Bilibili排行榜</h3>
+    </div>
+</header>
+
+<div class="container" id="items">
+    <div class="item" style="display: none;">
+       
+    </div>
+   
+    
+</div>
+<a href="bangdan.json" id="next"></a>
+<!---modal1-->
+<div class="modal fade" id="detailWindow" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel1">详细页</h5>
+        </div>
+        <div class="modal-body">
+ 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary" data-dismiss="modal" id="btn-back">返回</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---modal2-->
+<div class="modal fade" id="infoWindow" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel1">提示！</h5>
+        </div>
+        <div class="modal-body">
+            【1】本网站仅用于技术交流，如有侵权联系<a href="mailto:vcpd@outlook.com">开发者</a>进行删除；<br/>
+            【2】开发者：前端:neigeshoufu，数据提供/后端:Dr.Zhu
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary" data-dismiss="modal" id="btn-back">返回</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
